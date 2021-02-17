@@ -16600,7 +16600,30 @@ img{
 	color: #fff;
 	letter-spacing: 1px;
 	margin-bottom: 15px;
-	background-image: linear-gradient(transparent, black);
-	transition: 0.5s;
+	background-color: black;
+	/* transition: 0.5s; */
 	text-align: center;
 }
+
+.img-caption h2 {
+	font-size: 15px;
+	margin: 0px;
+	margin-bottom: 15px;
+	padding: 10px 0 10px 0;
+	font-family: Chalkduster, fantasy;
+	/* font-family: Trattatello, fantasy; */
+	text-align: center;
+	/* background-color: #a9a9a9; */
+	color: white;
+}
+.img-caption {
+	background-color: #a9a9a9;
+}
+
+.tz-gallery .lightbox img {
+    margin-bottom: 0px;
+}
+
+/* .tz-gallery {
+	background-color: #f8f8ff;
+} */
