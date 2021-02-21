@@ -5,6 +5,7 @@
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<!-- Stylesheets
 	============================================= -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Poppins:300,400,500,600,700|PT+Serif:400,400i&display=swap" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" href="assets/css/bootstrap.css" type="text/css" />
 	<link rel="stylesheet" href="assets/style.css" type="text/css" />
@@ -12,43 +13,54 @@
 	<link rel="stylesheet" href="assets/css/font-icons.css" type="text/css" />
 	<link rel="stylesheet" href="assets/css/animate.css" type="text/css" />
 	<link rel="stylesheet" href="assets/css/magnific-popup.css" type="text/css" />
-    <link rel="stylesheet" href="assets/css/custom.css" type="text/css" />
-    <!-- My imges -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
-    <!-- end my images -->
+	<link rel="stylesheet" href="assets/css/custom.css" type="text/css" />
+	<link rel="stylesheet" href="assets/holidaycards.css" type="text/css" />
+   
+
+
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta property="og:locale" content="en_US">
 	<meta property="og:type" content="website">
-	<meta property="og:title" content="3-D Art | ethanAart" />
-	<meta property="og:description" content="3-D Art art by Ethan Altshuler created during his childhood">
+	<meta property="og:title" content="Holiday Cards | ethanAart" />
+	<meta property="og:description" content="Holiday Cards art by Ethan Altshuler created during his childhood">
 	<meta property="og:url" content="https://myclone.page/">
 	<meta property="og:site_name" content="myclone.page">
 	<meta property="og:image" content="https://myclone.page/images/og-color-logo-ethanaart.jpg" />
 	<title>3-D Art | ethanAart</title>
-	<meta name="description" content=" 3-D Art art by Ethan Altshuler created during his childhood" />
-	<meta name="keywords" content="3-D Art art, childhood" />
+	<meta name="description" content=" Holiday Cards art by Ethan Altshuler created during his childhood" />
+	<meta name="keywords" content="Holiday Cards art, childhood" />
 	<meta name="robots" content="all,follow" />
 	<meta name="googlebot" content="index,follow,snippet,archive" />
 	<meta name="twitter:card" content="https://myclone.page/images/og-color-logo-ethanaart.jpg">
-	<meta name="twitter:title" content=" 3-D Art | ethanAart ">
+	<meta name="twitter:title" content="Holiday Cards | ethanAart ">
 	<meta name="twitter:url" content=" https://myclone.page/ethanentersmidteens.html" />
-	<meta name="twitter:description" content=" 3-D Art art by Ethan Altshuler created during his childhood ">
+	<meta name="twitter:description" content=" Abstract art by Ethan Altshuler created during his childhood ">
 	<meta name="twitter:image" content=" https://myclone.page/images/og-color-logo-ethanaart.jpg" />
 	<link rel="shortcut icon" href="/favicon.ico" />
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-130204150-1"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
-		  function gtag(){dataLayer.push(arguments);}
-		  gtag('js', new Date());
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
 		
-		  gtag('config', 'UA-130204150-1');
+			gtag('config', 'UA-130204150-1');
+
+	// init Masonry
+	var $grid = $('.grid').masonry({
+		itemSelector: '.grid-item',
+		percentPosition: true,
+		columnWidth: '.grid-sizer'
+	});
+
+	// layout Masonry after each image loads
+	$grid.imagesLoaded().progress( function() {
+		$grid.masonry();
+	});  
 	</script>
-	<style>
-		.side-header #logo img {
-		    height: auto !important;
-		}
+<style>
+	.side-header #logo img {
+		height: auto !important;
+	}
 	</style>
 </head>
 
@@ -287,7 +299,7 @@
 		</header>
 		<section id="page-title">
 			<div class="container clearfix">
-				<h1>3-D Art</h1> <!-- 3D art page-->
+				<h1>3-D Art</h1>
 				<ol class="breadcrumb">
 					<li class="breadcrumb-item"><a href="#">Home</a>
 					</li>
@@ -295,364 +307,247 @@
 				</ol>
 			</div>
 		</section>
-		<!-- My code for images -->
-        <div class="container gallery-container">
-            
-            <div class="tz-gallery">
-        
-                <div class="row" data-masonry='{"percentPosition": true }'>
-                    <div class="col-sm-6 col-md-4">
-                        <a class="lightbox" href="images/754_Gia0001.jpg">
-                            <img src="images/754_Gia0001.jpg" alt="Ethan Altshuler 3-D Art Sculpture" title="Alberto Giacometti inspired Man throwing ball with dog. (2/14)" thumb_width="241" source_path="images/754_Gia0001.jpg" caption="gia0001 3-D Art">
-                        </a>
-                        <div class="overlay">
-                            <h2>Alberto Giacometti inspired Man throwing ball with dog. (2/14)</h2>
-                        </div>
+    <section> 
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="custCarousel" class="carousel slide" data-ride="carousel" align="center">
+                        <!-- slides -->
+                        <div class="carousel-inner d-flex align-items-center">
+                            <div class="carousel-item active">
+                                <img src="images/754_Gia0001.jpg" alt="Ethan Altshuler 3-D Art Sculpture"> 
+                                <h3>Alberto Giacometti inspired Man throwing ball with dog. (2/14)</h3>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/754_3da0028.jpg" alt=""> 
+                                <h3>Need to Add</h3>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/754_3da0029.jpg" alt="">
+                                <h3>Need to Add</h3>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/754_3da0030.jpg" alt=""> 
+                                <h3>Need to Add</h3>
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="images/726_3da0037.jpg" alt="Paper Towel Rolls Sculpture 1"> 
+                                <h3>Paper Towel Rolls Sculpture 1</h3>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/754_3da0038.jpg" alt="Paper Towel Rolls Sculpture 2"> 
+                                <h3>Paper Towel Rolls Sculpture 2</h3>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/753_3da0039.jpg" alt="Paper Towel Rolls Sculpture 3">
+                                <h3>Paper Towel Rolls Sculpture 3</h3>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/753_3da0040.jpg" alt="Paper Towel Rolls Sculpture"> 
+                                <h3>Paper Towel Rolls Sculpture 4</h3>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/754_dogplane1.jpg" alt="Dog Airlines side and inside views"> 
+                                <h3>Dog Airlines side and inside views</h3>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/754_dogplane2.jpg" alt="Dog Airlines from the back and inside view"> 
+                                <h3>Dog Airlines from the back and inside view</h3>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/754_dogplane4.jpg" alt="Dog Airlines front and overhead views"> 
+                                <h3>Dog Airlines front and overhead views</h3>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/754_3da0001.jpg" alt="Pangu"> 
+                                <h3>Pangu</h3>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/565_r-3da0002.png" alt="Pangu Body"> 
+                                <h3>Pangu Body</h3>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/565_r-3da0003.png" alt="Pangu Back"> 
+                                <h3>Pangu Back</h3>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/754_3da0004.jpg" alt="Pangu and the Creation of the World"> 
+                                <h3>Pangu and the Creation of the World</h3>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/754_3da0005.jpg" alt="Paper Mache Dogs"> 
+                                <h3>Paper Mache Dogs</h3>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/754_3da0006.jpg" alt="Paper mache fruit and jug"> 
+                                <h3>Paper mache fruit and jug</h3>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/754_3da0007.jpg" alt="Venom, Green Goblin &amp; Doc Ock"> 
+                                <h3>Venom, Green Goblin & Doc Ock</h3>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/754_3da0008.jpg" alt="Balls"> 
+                                <h3>Balls</h3>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/754_3da0009.jpg" alt="Balls Closer"> 
+                                <h3>Balls Closer</h3>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/754_3da0010.jpg" alt="Balls Even Closer"> 
+                                <h3>Balls Even Closer</h3>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/754_3da0011.jpg" alt="Balls Closest"> 
+                                <h3>Balls Closest</h3>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/565_3da0012.jpg" alt="Bear Mask"> 
+                                <h3>Bear Mask</h3>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/754_3da0013.JPG" alt="Pandas"> 
+                                <h3>Pandas</h3>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/565_3da0014.jpg" alt="Abstract"> 
+                                <h3>Abstract</h3>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/567_3da0015.jpg" alt="Robot"> 
+                                <h3>Robot</h3>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/565_r-3da0016.png" alt="Coyote Palm"> 
+                                <h3>Coyote Palm</h3>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/424_3da0017.jpg" alt="Dog World"> 
+                                <h3>Dog World</h3>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/424_3da0018.jpg" alt="Planets"> 
+                                <h3>Planets</h3>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/427_3da0019.jpg" alt="Marble Drop"> 
+                                <h3>Marble Drop</h3>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/428_3da0020.jpg" alt="School"> 
+                                <h3>School</h3>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/423_3da0021.jpg" alt="Flying Machines"> 
+                                <h3>Marble Drop</h3>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/287_3da0022.jpg" alt="A City"> 
+                                <h3>Marble Drop</h3>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/286_3da0023.jpg" alt="Dog Home & Classroom"> 
+                                <h3>Dog Home & Classroom</h3>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/287_3da0024.jpg" alt="Dog Hotel with Dogs"> 
+                                <h3>Dog Hotel with Dogs</h3>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/288_3da0025.jpg" alt="Dog Hotel"> 
+                                <h3>Dog Hotel</h3>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/754_3da0026.jpg" alt="Star Fish Seascape"> 
+                                <h3>Star Fish Seascape</h3>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/753_3da0027.jpg" alt="Elephant"> 
+                                <h3>Elephant</h3>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/754_3da0028.jpg" alt="Jet Front"> 
+                                <h3>Jet Front</h3>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/754_3da0029.jpg" alt="Jet"> 
+                                <h3>Jet</h3>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/565_dogplane3.jpg" alt="Dog Airlines back view"> 
+                                <h3>Dog Airlines back view</h3>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/754_3da0030.jpg" alt="Jet Top"> 
+                                <h3>Jet Top</h3>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/754_3da0032.jpg" alt="Planets"> 
+                                <h3>Planets</h3>
+                            </div>
+                        </div> <!-- Left right --> 
+                        <a class="carousel-control-prev" href="#custCarousel" data-slide="prev"> 
+                            <span class="carousel-control-prev-icon"></span> </a> 
+                        <a class="carousel-control-next" href="#custCarousel" data-slide="next"> 
+                            <span class="carousel-control-next-icon"></span> </a> <!-- Thumbnails -->
+                            <ol class="carousel-indicators list-inline d-flex align-items-center">
+                                <li class="list-inline-item selected" data-slide-to="0" data-target="#custCarousel"> <img src="images/754_Gia0001.jpg" class="img-fluid"> </li>
+                                <li class="list-inline-item" data-slide-to="1" data-target="#custCarousel"> <img src="images/754_3da0028.jpg" class="img-fluid"> </li>
+                                <li class="list-inline-item" data-slide-to="2" data-target="#custCarousel"> <img src="images/754_3da0029.jpg" class="img-fluid"> </li>
+                                <li class="list-inline-item" data-slide-to="3" data-target="#custCarousel"> <img src="images/754_3da0030.jpg" class="img-fluid"> </li>
+                                <li class="list-inline-item" data-slide-to="4" data-target="#custCarousel"> <img src="images/726_3da0037.jpg" class="img-fluid"> </li>
+                                <li class="list-inline-item" data-slide-to="5" data-target="#custCarousel"> <img src="images/754_3da0038.jpg" class="img-fluid"> </li>
+                                <li class="list-inline-item" data-slide-to="6" data-target="#custCarousel"> <img src="images/753_3da0039.jpg" class="img-fluid"> </li>
+                                <li class="list-inline-item" data-slide-to="7" data-target="#custCarousel"> <img src="images/753_3da0040.jpg" class="img-fluid"> </li>
+                                <li class="list-inline-item" data-slide-to="8" data-target="#custCarousel"> <img src="images/754_dogplane1.jpg" class="img-fluid"> </li>
+                                <li class="list-inline-item" data-slide-to="9" data-target="#custCarousel"> <img src="images/754_dogplane2.jpg" class="img-fluid"> </li>
+                                <li class="list-inline-item" data-slide-to="10" data-target="#custCarousel"> <img src="images/754_dogplane4.jpg" class="img-fluid"> </li>
+                                <li class="list-inline-item" data-slide-to="11" data-target="#custCarousel"> <img src="images/754_3da0001.jpg" class="img-fluid"> </li>
+                                <li class="list-inline-item" data-slide-to="12" data-target="#custCarousel"> <img src="images/565_r-3da0002.png" class="img-fluid"> </li>
+                                <li class="list-inline-item" data-slide-to="13" data-target="#custCarousel"> <img src="images/565_r-3da0003.png" class="img-fluid"> </li>
+                                <li class="list-inline-item" data-slide-to="14" data-target="#custCarousel"> <img src="images/754_3da0004.jpg" class="img-fluid"> </li>
+                                <li class="list-inline-item" data-slide-to="15" data-target="#custCarousel"> <img src="images/754_3da0005.jpg" class="img-fluid"> </li>
+                                <li class="list-inline-item" data-slide-to="16" data-target="#custCarousel"> <img src="images/754_3da0006.jpg" class="img-fluid"> </li>
+                                <li class="list-inline-item" data-slide-to="17" data-target="#custCarousel"> <img src="images/754_3da0007.jpg" class="img-fluid"> </li>
+                                <li class="list-inline-item" data-slide-to="18" data-target="#custCarousel"> <img src="images/754_3da0008.jpg" class="img-fluid"> </li>
+                                <li class="list-inline-item" data-slide-to="19" data-target="#custCarousel"> <img src="images/754_3da0009.jpg" class="img-fluid"> </li>
+                                <li class="list-inline-item" data-slide-to="20" data-target="#custCarousel"> <img src="images/754_3da0010.jpg" class="img-fluid"> </li>
+                                <li class="list-inline-item" data-slide-to="21" data-target="#custCarousel"> <img src="images/754_3da0011.jpg" class="img-fluid"> </li>
+                                <li class="list-inline-item" data-slide-to="22" data-target="#custCarousel"> <img src="images/565_3da0012.jpg" class="img-fluid"> </li>
+                                <li class="list-inline-item" data-slide-to="23" data-target="#custCarousel"> <img src="images/754_3da0013.JPG" class="img-fluid"> </li>
+                                <li class="list-inline-item" data-slide-to="24" data-target="#custCarousel"> <img src="images/565_3da0014.jpg" class="img-fluid"> </li>
+                                <li class="list-inline-item" data-slide-to="25" data-target="#custCarousel"> <img src="images/567_3da0015.jpg" class="img-fluid"> </li>
+                                <li class="list-inline-item" data-slide-to="26" data-target="#custCarousel"> <img src="images/565_r-3da0016.png" class="img-fluid"> </li>
+                                <li class="list-inline-item" data-slide-to="27" data-target="#custCarousel"> <img src="images/424_3da0017.jpg" class="img-fluid"> </li>
+                                <li class="list-inline-item" data-slide-to="28" data-target="#custCarousel"> <img src="images/424_3da0018.jpg" class="img-fluid"> </li>
+                                <li class="list-inline-item" data-slide-to="29" data-target="#custCarousel"> <img src="images/427_3da0019.jpg" class="img-fluid"> </li>
+                                <li class="list-inline-item" data-slide-to="30" data-target="#custCarousel"> <img src="images/428_3da0020.jpg" class="img-fluid"> </li>
+                                <li class="list-inline-item" data-slide-to="31" data-target="#custCarousel"> <img src="images/423_3da0021.jpg" class="img-fluid"> </li>
+                                <li class="list-inline-item" data-slide-to="32" data-target="#custCarousel"> <img src="images/287_3da0022.jpg" class="img-fluid"> </li>
+                                <li class="list-inline-item" data-slide-to="33" data-target="#custCarousel"> <img src="images/286_3da0023.jpg" class="img-fluid"> </li>
+                                <li class="list-inline-item" data-slide-to="34" data-target="#custCarousel"> <img src="images/287_3da0024.jpg" class="img-fluid"> </li>
+                                <li class="list-inline-item" data-slide-to="35" data-target="#custCarousel"> <img src="images/288_3da0025.jpg" class="img-fluid"> </li>
+                                <li class="list-inline-item" data-slide-to="36" data-target="#custCarousel"> <img src="images/754_3da0026.jpg" class="img-fluid"> </li>
+                                <li class="list-inline-item" data-slide-to="37" data-target="#custCarousel"> <img src="images/753_3da0027.jpg" class="img-fluid"> </li>
+                                <li class="list-inline-item" data-slide-to="38" data-target="#custCarousel"> <img src="images/754_3da0028.jpg" class="img-fluid"> </li>
+                                <li class="list-inline-item" data-slide-to="39" data-target="#custCarousel"> <img src="images/754_3da0029.jpg" class="img-fluid"> </li>
+                                <li class="list-inline-item" data-slide-to="40" data-target="#custCarousel"> <img src="images/565_dogplane3.jpg" class="img-fluid"> </li>
+                                <li class="list-inline-item" data-slide-to="41" data-target="#custCarousel"> <img src="images/754_3da0030.jpg" class="img-fluid"> </li>
+                                <li class="list-inline-item" data-slide-to="42" data-target="#custCarousel"> <img src="images/754_3da0032.jpg" class="img-fluid"> </li>
+                                <!-- <li class="list-inline-item"> <a id="carousel-selector-2" data-slide-to="41" data-target="#custCarousel"> <img src="images/754_3da0029.jpg" class="img-fluid"> </a> </li>
+                                <li class="list-inline-item"> <a id="carousel-selector-2" data-slide-to="42" data-target="#custCarousel"> <img src="images/754_3da0029.jpg" class="img-fluid"> </a> </li> -->
+                            </ol>
                     </div>
-                    <div class="col-sm-6 col-md-4">
-                        <a class="lightbox" href="images/754_3da0028.jpg">
-                            <img src="images/754_3da0028.jpg"  alt="" title="" source_path="images/754_3da0028.jpg" caption="">
-                        </a>
-                        <div class="overlay">
-                            <h2>Need to Add</h2>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-4">
-                        <a class="lightbox" href="images/754_3da0029.jpg">
-                            <img src="images/754_3da0029.jpg"  alt="" title="" source_path="images/754_3da0029.jpg" caption="">
-                        </a>
-                        <div class="overlay">
-                            <h2>Need to Add</h2>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4">
-                        <a class="lightbox" href="images/754_3da0030.jpg">
-                            <img src="images/754_3da0030.jpg" alt="" title="" source_path="images/754_3da0030.jpg" caption="">
-                        </a>
-                        <div class="overlay">
-                            <h2>Need to Add</h2>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4">
-                        <a class="lightbox" href="images/726_3da0037.jpg">
-                            <img src="images/726_3da0037.jpg" alt="" title="Paper Towel Rolls Sculpture 1" source_path="images/726_3da0037.jpg" caption="3da0037">
-                        </a>
-                        <div class="overlay">
-                            <h2>Paper Towel Rolls Sculpture 1</h2>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4">
-                        <a class="lightbox" href="images/754_3da0038.jpg">
-                            <img src="images/754_3da0038.jpg" alt="" title="Paper Towel Rolls Sculpture 2" source_path="images/754_3da0038.jpg" caption="3da0038">
-                        </a>
-                        <div class="overlay">
-                            <h2>Paper Towel Rolls Sculpture 2</h2>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4">
-                        <a class="lightbox" href="images/753_3da0039.jpg">
-                            <img src="images/753_3da0039.jpg" alt="" title="Paper Towel Rolls Sculpture 3" source_path="images/753_3da0039.jpg" caption="3da0039">
-                        </a>
-                        <div class="overlay">
-                            <h2>Paper Towel Rolls Sculpture 3</h2>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4">
-                        <a class="lightbox" href="images/753_3da0040.jpg">
-                            <img src="images/753_3da0040.jpg" alt="" title="Paper Towel Rolls Sculpture 4" source_path="images/753_3da0040.jpg" caption="3da0040">
-                        </a>
-                        <div class="overlay">
-                            <h2>Paper Towel Rolls Sculpture 4</h2>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4">
-                        <a class="lightbox" href="images/754_dogplane1.jpg">
-                            <img src="images/754_dogplane1.jpg" alt="" title="" source_path="images/754_dogplane1.jpg" caption="Dog Airlines side and inside views">
-                        </a>
-                        <div class="overlay">
-                            <h2>Dog Airlines side and inside views</h2>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4">
-                        <a class="lightbox" href="images/754_dogplane2.jpg">
-                            <img src="images/754_dogplane2.jpg" alt="" title="" source_path="images/754_dogplane2.jpg" caption="Dog Airlines from the back and inside view">
-                        </a>
-                        <div class="overlay">
-                            <h2>Dog Airlines from the back and inside view</h2>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4">
-                        <a class="lightbox" href="images/754_dogplane4.jpg">
-                            <img src="images/754_dogplane4.jpg" alt="" title="" source_path="images/754_dogplane4.jpg" caption="Dog Airlines front and overhead views">
-                        </a>
-                        <div class="overlay">
-                            <h2>Dog Airlines front and overhead views</h2>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4">
-                        <a class="lightbox" href="images/754_3da0001.jpg">
-                            <img src="images/754_3da0001.jpg" alt="https://myclone.page/3dart.html" title="Pangu" source_path="images/754_3da0001.jpg" caption="3da0001">
-                        </a>
-                        <div class="overlay">
-                            <h2>Pangu</h2>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4">
-                        <a class="lightbox" href="images/565_r-3da0002.png">
-                            <img src="images/565_r-3da0002.png" alt="myclone.page 3-D Art" title="Pangu Body" source_path="images/565_r-3da0002.png" caption="3da0002">
-                        </a>
-                        <div class="overlay">
-                            <h2>Pangu Body</h2>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4">
-                        <a class="lightbox" href="images/565_r-3da0003.png">
-                            <img src="images/565_r-3da0003.png"  alt="myclone.page 3-D Art" title="Pangu Back" source_path="images/565_r-3da0003.png" caption="3da0003">
-                        </a>
-                        <div class="overlay">
-                            <h2>Pangu Back</h2>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4">
-                        <a class="lightbox" href="images/754_3da0004.jpg">
-                            <img src="images/754_3da0004.jpg" alt="www.myclone.page" title="Pangu and the Creation of the World" source_path="images/754_3da0004.jpg" caption="3da0004">
-                        </a>
-                        <div class="overlay">
-                            <h2>Pangu and the Creation of the World</h2>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4">
-                        <a class="lightbox" href="images/754_3da0005.jpg">
-                            <img src="images/754_3da0005.jpg" alt="www.myclone.page" title="Paper Mache Dogs" source_path="images/754_3da0005.jpg" caption="3da0005">
-                        </a>
-                        <div class="overlay">
-                            <h2>Paper Mache Dogs</h2>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4">
-                        <a class="lightbox" href="images/754_3da0006.jpg">
-                            <img src="images/754_3da0006.jpg" alt="www.myclone.page" title="Paper mache fruit and jug" source_path="images/754_3da0006.jpg" caption="3da0006">
-                        </a>
-                        <div class="overlay">
-                            <h2>Paper mache fruit and jug</h2>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4">
-                        <a class="lightbox" href="images/754_3da0007.jpg">
-                            <img src="images/754_3da0007.jpg" alt="www.myclone.page" title="Venom, Green Goblin &amp; Doc Ock" source_path="images/754_3da0007.jpg" caption="3da0007">
-                        </a>
-                        <div class="overlay">
-                            <h2>Venom, Green Goblin & Doc Ock</h2>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4">
-                        <a class="lightbox" href="images/754_3da0008.jpg">
-                            <img src="images/754_3da0008.jpg" alt="www.myclone.page" title="Balls" thumb_width="83" thumb_height="62" orig_width="754" orig_height="565" source_path="images/754_3da0008.jpg" caption="3da0008">
-                        </a>
-                        <div class="overlay">
-                            <h2>Balls</h2>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4">
-                        <a class="lightbox" href="">
-                        <a class="lightbox" href="images/754_3da0009.jpg">
-                            <img src="images/754_3da0009.jpg" alt="www.myclone.page" title="Balls Closer" thumb_width="83" thumb_height="70" orig_width="754" orig_height="644" source_path="images/754_3da0009.jpg" caption="3da0009">
-                        </a>
-                        <div class="overlay">
-                            <h2>Balls Closer</h2>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4">
-                        <a class="lightbox" href="images/754_3da0010.jpg">
-                            <img src="images/754_3da0010.jpg" alt="www.myclone.page" title="Balls Even Closer" thumb_width="83" thumb_height="70" orig_width="754" orig_height="644" source_path="images/754_3da0010.jpg" caption="3da0010">
-                        </a>
-                        <div class="overlay">
-                            <h2>Balls Even Closer</h2>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4">
-                        <a class="lightbox" href="images/754_3da0011.jpg">
-                            <img src="images/754_3da0011.jpg" alt="www.myclone.page" title="Balls Closest" thumb_width="83" thumb_height="62" orig_width="754" orig_height="565" source_path="images/754_3da0011.jpg" caption="3da0011">
-                        </a>
-                        <div class="overlay">
-                            <h2>Balls Closest</h2>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4">
-                        <a class="lightbox" href="images/565_3da0012.jpg">
-                            <img src="images/565_3da0012.jpg"  class="wb_element_paThumb" alt="www.myclone.page" title="Bear Mask" thumb_width="62" thumb_height="83" orig_width="565" orig_height="754" source_path="images/565_3da0012.jpg" caption="3da0012">
-                        </a>
-                        <div class="overlay">
-                            <h2>Bear Mask</h2>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4">
-                        <a class="lightbox" href="iimages/754_3da0013.JPG">
-                            <img src="images/754_3da0013.JPG"  class="wb_element_paThumb" alt="www.myclone.page" title="Pandas" thumb_width="83" thumb_height="62" orig_width="754" orig_height="565" source_path="images/754_3da0013.JPG" caption="3da0013">
-                        </a>
-                        <div class="overlay">
-                            <h2>Pandas</h2>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4">
-                        <a class="lightbox" href="images/565_3da0014.jpg">
-                            <img src="images/565_3da0014.jpg" class="wb_element_paThumb" alt="www.myclone.page" title="Abstract" thumb_width="62" thumb_height="83" orig_width="565" orig_height="754" source_path="images/565_3da0014.jpg" caption="3da0014">
-                        </a>
-                        <div class="overlay">
-                            <h2>Abstract</h2>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4">
-                        <a class="lightbox" href="images/567_3da0015.jpg">
-                            <img src="images/567_3da0015.jpg" class="wb_element_paThumb" alt="www.myclone.page" title="Robot" thumb_width="62" thumb_height="83" orig_width="567" orig_height="754" source_path="images/567_3da0015.jpg" caption="3da0015">
-                        </a>
-                        <div class="overlay">
-                            <h2>Robot</h2>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4">
-                        <a class="lightbox" href="images/565_r-3da0016.png">
-                            <img src="images/565_r-3da0016.png"  class="wb_element_paThumb" alt="myclone.page 3-D Art" title="Coyote Palm" thumb_width="62" thumb_height="83" orig_width="565" orig_height="754" source_path="images/565_r-3da0016.png" caption="3da0016">
-                        </a>
-                        <div class="overlay">
-                            <h2>Coyote Palm</h2>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4">
-                        <a class="lightbox" href="images/424_3da0017.jpg">
-                            <img src="images/424_3da0017.jpg" class="wb_element_paThumb" alt="www.myclone.page" title="Dog World" thumb_width="83" thumb_height="55" orig_width="424" orig_height="286" source_path="images/424_3da0017.jpg" caption="3da0017">
-                        </a>
-                        <div class="overlay">
-                            <h2>coyote Palm</h2>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4">
-                        <a class="lightbox" href="images/424_3da0018.jpg">
-                            <img src="images/424_3da0018.jpg" class="wb_element_paThumb" alt="www.myclone.page" title="Planets" thumb_width="83" thumb_height="56" orig_width="424" orig_height="288" source_path="images/424_3da0018.jpg" caption="3da0018">
-                        </a>
-                        <div class="overlay">
-                            <h2>Planets</h2>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4">
-                        <a class="lightbox" href="images/427_3da0019.jpg">
-                            <img src="images/427_3da0019.jpg" class="wb_element_paThumb" alt="www.myclone.page" title="Marble Drop" thumb_width="83" thumb_height="55" orig_width="427" orig_height="288" source_path="images/427_3da0019.jpg" caption="3da0019">
-                        </a>
-                        <div class="overlay">
-                            <h2>Marble Drop</h2>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4">
-                        <a class="lightbox" href="images/428_3da0020.jpg">
-                            <img src="images/428_3da0020.jpg"  class="wb_element_paThumb" alt="www.myclone.page" title="School" thumb_width="83" thumb_height="55" orig_width="428" orig_height="284" source_path="images/428_3da0020.jpg" caption="3da0020">
-                        </a>
-                        <div class="overlay">
-                            <h2>School</h2>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4">
-                        <a class="lightbox" href="iimages/423_3da0021.jpg">
-                            <img src="images/423_3da0021.jpg" class="wb_element_paThumb" alt="www.myclone.page" title="Flying Machines" thumb_width="83" thumb_height="56" orig_width="423" orig_height="286" source_path="images/423_3da0021.jpg" caption="3da0021">
-                        </a>
-                        <div class="overlay">
-                            <h2>Flying Machines</h2>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4">
-                        <a class="lightbox" href="images/287_3da0022.jpg">
-                            <img src="images/287_3da0022.jpg"  class="wb_element_paThumb" alt="www.myclone.page" title="A City" thumb_width="56" thumb_height="83" orig_width="287" orig_height="425" source_path="images/287_3da0022.jpg" caption="3da0022">
-                        </a>
-                        <div class="overlay">
-                            <h2>A City</h2>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4">
-                        <a class="lightbox" href="images/286_3da0023.jpg">
-                            <img src="images/286_3da0023.jpg" class="wb_element_paThumb" alt="www.myclone.page" title="Dog Home &amp; Classroom" thumb_width="55" thumb_height="83" orig_width="286" orig_height="424" source_path="images/286_3da0023.jpg" caption="3da0023">
-                        </a>
-                        <div class="overlay">
-                            <h2>Dog Home & Classroom</h2>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4">
-                        <a class="lightbox" href="images/287_3da0024.jpg">
-                            <img src="images/287_3da0024.jpg" class="wb_element_paThumb" alt="www.myclone.page" title="Dog Hotel with Dogs" thumb_width="56" thumb_height="83" orig_width="287" orig_height="425" source_path="images/287_3da0024.jpg" caption="3da0024">
-                        </a>
-                        <div class="overlay">
-                            <h2>Dog Hotel with Dogs</h2>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4">
-                        <a class="lightbox" href="images/288_3da0025.jpg">
-                            <img src="images/288_3da0025.jpg" class="wb_element_paThumb" alt="www.myclone.page" title="Dog Hotel" thumb_width="56" thumb_height="83" orig_width="288" orig_height="425" source_path="images/288_3da0025.jpg" caption="3da0025">
-                        </a>
-                        <div class="overlay">
-                            <h2>Dog Hotel</h2>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4">
-                        <a class="lightbox" href="images/754_3da0026.jpg">
-                            <img src="images/754_3da0026.jpg" class="wb_element_paThumb" alt="www.myclone.page" title="Star Fish Seascape" thumb_width="83" thumb_height="62" orig_width="754" orig_height="570" source_path="images/754_3da0026.jpg" caption="3da0026">
-                        </a>
-                        <div class="overlay">
-                            <h2>Star Fish Seascape</h2>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4">
-                        <a class="lightbox" href="images/753_3da0027.jpg">
-                            <img src="images/753_3da0027.jpg" class="wb_element_paThumb" alt="www.myclone.page" title="Elephant" thumb_width="83" thumb_height="53" orig_width="753" orig_height="489" source_path="images/753_3da0027.jpg" caption="3da0027">
-                        </a>
-                        <div class="overlay">
-                            <h2>Elephant</h2>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4">
-                        <a class="lightbox" href="images/754_3da0028.jpg">
-                            <img src="images/754_3da0028.jpg" class="wb_element_paThumb" alt="" title="Jet Front" thumb_width="83" thumb_height="58" orig_width="754" orig_height="535" source_path="images/754_3da0028.jpg" caption="3da0028">
-                        </a>
-                        <div class="overlay">
-                            <h2>Jet Front</h2>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4">
-                        <a class="lightbox" href="images/754_3da0029.jpg">
-                            <img src="images/754_3da0029.jpg" class="wb_element_paThumb" alt="" title="Jet" thumb_width="83" thumb_height="50" orig_width="754" orig_height="456" source_path="images/754_3da0029.jpg" caption="3da0029">
-                        </a>
-                        <div class="overlay">
-                            <h2>Jet</h2>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4">
-                        <a class="lightbox" href="images/565_dogplane3.jpg">
-                            <img src="images/565_dogplane3.jpg" class="wb_element_paThumb" alt="" title="Dog Airlines back view" thumb_width="62" thumb_height="83" orig_width="565" orig_height="754" source_path="images/565_dogplane3.jpg" caption="3da0030">
-                        </a>
-                        <div class="overlay">
-                            <h2>Dog Airlines back view</h2>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4">
-                        <a class="lightbox" href="images/754_3da0030.jpg">
-                            <img src="images/754_3da0030.jpg" class="wb_element_paThumb" alt="" title="Jet Top" thumb_width="83" thumb_height="52" orig_width="754" orig_height="480" source_path="images/754_3da0030.jpg" caption="3da0031">
-                        </a>
-                        <div class="overlay">
-                            <h2>Jet Top</h2>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4">
-                        <a class="lightbox" href="images/754_3da0032.jpg">
-                            <img src="images/754_3da0032.jpg" class="wb_element_paThumb" alt="" title="Planets" thumb_width="83" thumb_height="52" orig_width="754" orig_height="475" source_path="images/754_3da0032.jpg" caption="3da0032">
-                        </a>
-                        <div class="overlay">
-                            <h2>Planets</h2>
-                        </div>
-                    </div>
+
                 </div>
-        
+                
             </div>
-        
         </div>
-        
-        <!-- End code here -->
+
+    </section>
+		<!-- #content end -->
 		<footer id="footer" class="dark">
 			<div id="copyrights">
 				<div class="container">
@@ -674,6 +569,10 @@
 	<script src="js/jquery.js"></script>
 	<script src="js/plugins.min.js"></script>
 	<script src="assets/js/functions.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
 	<style>
 		ol.flex-control-nav li:hover a, ol.flex-control-nav li a.flex-active {
 		    background-color: #383838;
@@ -690,11 +589,7 @@
 	<!--disable right click and copy & paste-->
 	<script type="text/javascript">
 		$(document).ready(function(){$("body").bind("cut copy paste",function(n){n.preventDefault()}),$("body").on("contextmenu",function(n){return!1})});
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
-    <script>
-        baguetteBox.run('.tz-gallery');
-    </script>
+	</script>
 </body>
 
 </html>
