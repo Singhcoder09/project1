@@ -8,7 +8,12 @@
     filter: invert(1);
 } 
 
+/* .carousel-inner{
+    width:500px;
+    height: 500px;
+    margin: 0 auto;
 
+} */
 #custCarousel{
     margin-top: 20px;
 }
@@ -98,7 +103,7 @@
 	}
 	#custCarousel .carousel-indicators li img {
 		display: block;
-        max-width: 100%;  
+		max-width: 100%;  
 	}
 	#custCarousel .carousel-indicators li.active img {
 		border: 1px solid black;
@@ -107,7 +112,7 @@
 
 		width: 80%
     }
-    /* @media screen and (max-width: 1439px){
+    @media screen and (max-width: 1439px){
         .carousel-item img {
             width: 80%;
             margin-top: 20%;
@@ -122,7 +127,7 @@
             width: 80%;
             margin-top: 40%;
         }          
-*/
+
 	@media screen and (max-width: 760px){
 		.carousel-inner{
             width: 100%;
@@ -131,7 +136,6 @@
         }
         .carousel-item img {
             width: 80%;
-            height: 415px;
-            margin-bottom: 45%;
-        } 
+            margin-bottom: 60%;
+        }
     }
